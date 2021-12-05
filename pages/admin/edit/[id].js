@@ -93,39 +93,23 @@ const EditEntry = () => {
                   variant="filled"
                 />
               </FormControl>
-              //<FormControl
-              //  id="educationLevel"
-              //  isRequired
-              //  mb={marginBetweenElements}
-              //>
-              //  <FormLabel>Education level</FormLabel>
-              //  <Select
-              //    name="educationLevel"
-              //    onChange={onChange}
-              //    placeholder="Relevant education level"
-              //    variant="filled"
-              //    value={content.educationLevel}
-              //  >
-              //    <option value="Bachelors">Bachelors</option>
-              //    <option value="Masters">Masters</option>
-              //    <option value="PhD">PhD</option>
-              //  </Select>
-              //</FormControl>
-              <FormControl as='fieldset'
+              <FormControl
                 id="educationLevel"
+                isRequired
+                mb={marginBetweenElements}
               >
-                <FormLabel as='legend'>Education level</FormLabel>
-                <CheckboxGroup
+                <FormLabel>Education level</FormLabel>
+                <Select
                   name="educationLevel"
                   onChange={onChange}
+                  placeholder="Relevant education level"
+                  variant="filled"
                   value={content.educationLevel}
                 >
-                  <HStack spacing='24px'>
-                    <Checkbox value='Bachelors'>Bachelors</Checkbox>
-                    <Checkbox value='Masters'>Masters</Checkbox>
-                    <Checkbox value='PhD'>PhD</Checkbox>
-                  </HStack>
-                </CheckboxGroup>
+                  <option value="Bachelors">Bachelors</option>
+                  <option value="Masters">Masters</option>
+                  <option value="PhD">PhD</option>
+                </Select>
               </FormControl>
               <FormControl id="modality" isRequired mb={marginBetweenElements}>
                 <FormLabel>Modality</FormLabel>
