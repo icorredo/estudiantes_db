@@ -103,7 +103,7 @@ const Post = () => {
         //</FormControl>
         <FormControl id="educationLevel" isRequired mb={marginBetweenElements}>
           <FormLabel>Education level</FormLabel>
-          <Select
+          <CheckboxGroup
             name="educationLevel"
             onChange={onChange}
             placeholder="Relevant education level"
@@ -112,7 +112,7 @@ const Post = () => {
             <Checkbox value="Bachelors">Bachelors</Checkbox>
             <Checkbox value="Masters">Masters</Checkbox>
             <Checkbox value="PhD">PhD</Checkbox>
-          </Select>
+          </CheckboxGroup>
         </FormControl>
         <FormControl id="modality" isRequired mb={marginBetweenElements}>
           <FormLabel>Modality</FormLabel>
