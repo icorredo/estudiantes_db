@@ -101,7 +101,7 @@ const Post = () => {
         //    <option value="PhD">PhD</option>
         //  </Select>
         //</FormControl>
-        <FormControl as='fieldset' id="educationLevel" isRequired mb={marginBetweenElements}>
+        <FormControl as='fieldset' id="educationLevel">
           <FormLabel as='legend'>Education level</FormLabel>
           <CheckboxGroup
             name="educationLevel"
