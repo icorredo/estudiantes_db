@@ -2,7 +2,7 @@ import admin from 'firebase-admin'
 
 const serviceAccount = {
   type: 'service_account',
-  project_id: 'rsef-test2',
+  project_id: 'rsef-test2-7247e',
   private_key_id: process.env.PRIVATE_KEY_ID,
   private_key: process.env.PRIVATE_KEY.replace(/\\n/g, '\n'),
   client_email: process.env.CLIENT_EMAIL,
@@ -18,7 +18,7 @@ if (!admin.apps.length) {
   try {
     admin.initializeApp({
       credential: admin.credential.cert(serviceAccount),
-      databaseURL: 'https://rsef-test2.firebaseio.com/',
+      databaseURL: 'https://rsef-test2-7247e.firebaseio.com/',
     })
   } catch (error) {
     console.log('Firebase admin initialization error', error.stack)
