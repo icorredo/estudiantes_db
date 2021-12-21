@@ -19,11 +19,22 @@ import {Container, HomeEntry, Protection} from '../../components'
 import db from '../../utils/db'
 
 const Published = ({entriesData}) => {
-  const [data, setData] = useState(entriesData)
-
+  const [data, setData] = useState(entriesData) 
+  /* 
+  useState es un hook de React. 
+  Los hooks te permiten usar estado y otras características de React sin escribir una clase.  
+  useState(estado_inicial) te da [rective value, setter] = [estado_actual, funcion_que_lo_actualiza]
+  */
+  
+  // async es una funcion asincrona
   const onDelete = async id => {
     await axios.delete(`/api/entry/${id}`)
     setData(data.filter(item => item.id !== id))
+     /* 
+     Actualizamos la variable de estado data llamando a setData. 
+     Cuando esto pasa React actualizara el componente Published pasandole de nuevo el valor data
+     */
+    
   }
 
   return (
