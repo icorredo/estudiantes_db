@@ -2,6 +2,8 @@ import React from 'react'
 import {Heading, Box, Stack, Text} from '@chakra-ui/react'
 import {Container} from '../components'
 
+// Pagina que coniene el mensaje de aceptacion de la solicitud de incorporar la internship
+
 const Success = () => {
   return (
     <Container>
