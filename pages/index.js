@@ -13,6 +13,8 @@ import {
 import {Container, HomeEntry, Filters} from '../components'
 import db from '../utils/db'
 
+// Pagina principal
+
 const NoElements = () => (
   <Flex
     alignItems="center"
