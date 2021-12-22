@@ -20,6 +20,8 @@ import {
 } from '@chakra-ui/react'
 import {Container} from '../components'
 
+// Pagina del formulario de solicitud de incorporacion de la internship
+
 const Post = () => {
   const router = useRouter()
   const [content, setContent] = useState({
