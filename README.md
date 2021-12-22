@@ -35,3 +35,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Information about the project folder structure
 Each script in pages directory corresponds to a UI page. If you create a new script in pages, a new UI page will appear.
+To acces this new page do http://localhost:3000/newpage
