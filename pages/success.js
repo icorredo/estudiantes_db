@@ -2,7 +2,10 @@ import React from 'react'
 import {Heading, Box, Stack, Text} from '@chakra-ui/react'
 import {Container} from '../components'
 
-// Pagina que coniene el mensaje de aceptacion de la solicitud de incorporar la internship
+/* Pagina que coniene el mensaje de aceptacion de la solicitud de incorporar la internship
+   Dentro del componente de React, Succes, se usan los componentes de chakra importados. 
+   Las opciones que se pueden aplicar a estos elementos de chakra estan en la documentacion.
+   Exportar el componente implica que sea utilizable por otros scripts sin necesidad de importarlo cada vez.*/
 
 const Success = () => {
   return (
