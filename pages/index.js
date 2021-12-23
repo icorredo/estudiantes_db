@@ -44,6 +44,7 @@ const Index = ({entriesData}) => {
   })
 
   useEffect(() => {
+    //El Hook de efecto te permite llevar a cabo efectos secundarios en componentes funcionales
     let newLocalEntries = [...entriesData]
     for (const [key, value] of Object.entries(selectedFilters)) {
       if (value !== '')
