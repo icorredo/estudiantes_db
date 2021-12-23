@@ -13,7 +13,7 @@ import {
 import {Container, HomeEntry, Filters} from '../components'
 import db from '../utils/db'
 
-// Pagina principal
+// Pagina principal. Los componentes de React son funciones puras, no pueden modificar las props (entradas). Siempre devuelven lo mismo.
 
 const NoElements = () => (
   <Flex
