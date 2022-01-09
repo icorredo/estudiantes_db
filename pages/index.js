@@ -27,7 +27,7 @@ const NoElements = () => (
   >
     <Heading as="h3" size="md" color="gray.600" textAlign="center">
       Seems like there's no internships with these characterisitics at this
-      time.
+      time bro.
     </Heading>
   </Flex>
 )
