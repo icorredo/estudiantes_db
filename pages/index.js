@@ -15,7 +15,7 @@ import db from '../utils/db'
 
 // Pagina principal. Los componentes de React son funciones puras, no pueden modificar las props (entradas). Siempre devuelven lo mismo.
 
-/*El estado le permite a los componentes de React cambiar su salida a lo largo del tiempo en respuesta a acciones del usuario, 
+/*El estado le permite a los componentes de React cambiar su salida a lo largo del tiempo en respuesta a acciones del usuario,
 respuestas de red y cualquier otra cosa, sin violar esta regla*/
 
 const NoElements = () => (
@@ -28,6 +28,7 @@ const NoElements = () => (
     <Heading as="h3" size="md" color="gray.600" textAlign="center">
       Seems like there's no internships with these characterisitics at this
       time bro.
+      //hola
     </Heading>
   </Flex>
 )
